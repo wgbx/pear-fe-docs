@@ -2,7 +2,6 @@ import { defineConfig } from 'vitepress'
 import sidebar from './sidebar'
 
 export default defineConfig({
-  base: '/docs/',
   head: [['link', { rel: 'icon', href: '/docs/favicon.svg', type: 'image/svg+xml' }]],
   lang: 'zh-CN',
   title: 'docs',
