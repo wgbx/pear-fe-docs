@@ -1,25 +1,25 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "My Awesome Project"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "pear/docs"
+  text: "JavaScript 使用工具库"
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: 开始
+      link: /posts/start/index.md
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: 在 Github 上查看
+      link: https://github.com/pear/docs
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - icon: 🛠️
+    title: TypeScript
+    details: 基于 TypeScript 编写，Rollup 打包的一款现代 JS 函数类库
+  - icon: 🚀
+    title: ES6+
+    details: 适用于现代浏览器，基于 ES6+ 的 JavaScript 规范，聚焦业务工具而非函数
+  - icon: 📦
+    title: ESM
+    details: 无任何依赖，使用 es 模块导出，未使用的方法不会进入构建环节
 ---
-

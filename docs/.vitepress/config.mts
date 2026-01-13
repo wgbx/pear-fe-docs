@@ -1,28 +1,36 @@
 import { defineConfig } from 'vitepress'
+import sidebar from './sidebar'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "My Awesome Project",
-  description: "A VitePress Site",
+  base: '/docs/',
+  head: [['link', { rel: 'icon', href: '/docs/favicon.svg', type: 'image/svg+xml' }]],
+  lang: 'zh-CN',
+  title: 'docs',
+  description: '现代JavaScript使用工具库',
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
+    logo: '/favicon.svg',
+    lastUpdated: {
+      text: '更新时间'
+    },
+    docFooter: {
+      prev: '上一页',
+      next: '下一页'
+    },
+    outline: {
+      label: '大纲'
+    },
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: '首页', link: '/' },
+      { text: '文档', link: '/posts/start/index.md' }
     ],
-
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
-    ],
-
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+    sidebar,
+    search: {
+      provider: 'local'
+    },
+    socialLinks: [{ icon: 'github', link: 'https://github.com/pear/docs' }],
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2019-present pear'
+    }
   }
 })

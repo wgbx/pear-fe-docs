@@ -1,10 +1,40 @@
 {
-  "devDependencies": {
-    "vitepress": "2.0.0-alpha.15"
-  },
+  "name": "pear-fe-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Pear FE Docs",
   "scripts": {
-    "dev": "vitepress dev docs",
-    "build": "vitepress build docs",
-    "preview": "vitepress preview docs"
+    "dev": "vitepress dev docs --port 8888",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
+  },
+  "author": "wgbx",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.21.8",
+    "@babel/preset-env": "^7.21.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@rollup/plugin-terser": "^0.4.1",
+    "@rollup/plugin-typescript": "^11.1.1",
+    "@types/jest": "^29.5.1",
+    "@types/node": "^20.10.0",
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "oxlint": "^1.22.0",
+    "prettier": "^3.0.3",
+    "rollup": "^3.21.5",
+    "rollup-plugin-typescript2": "^0.34.1",
+    "ts-jest": "^29.1.0",
+    "tslib": "^2.5.2",
+    "typescript": "^5.0.4",
+    "vitepress": "1.6.4"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
   }
 }
