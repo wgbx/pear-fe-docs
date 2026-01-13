@@ -27,7 +27,7 @@ export default defineConfig({
     search: {
       provider: 'local'
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/pear/docs' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/bosinc/fe-docs' }],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2019-present pear'

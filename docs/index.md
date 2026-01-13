@@ -10,7 +10,7 @@ hero:
       link: /posts/hooks/index.md
     - theme: alt
       text: 在 Github 上查看
-      link: https://github.com/pear/docs
+      link: https://github.com/bosinc/fe-docs
 
 features:
   - icon: 🎣
