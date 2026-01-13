@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: 开始
-      link: /posts/start/index.md
+      link: /posts/hooks/index.md
     - theme: alt
       text: 在 Github 上查看
       link: https://github.com/pear/docs

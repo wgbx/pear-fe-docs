@@ -21,7 +21,8 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '文档', link: '/posts/start/index.md' }
+      { text: 'hooks', link: '/posts/hooks/index.md' },
+      { text: 'utils', link: '/posts/utils/index.md' }
     ],
     sidebar,
     search: {
