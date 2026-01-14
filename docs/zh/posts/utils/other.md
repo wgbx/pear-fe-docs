@@ -1,41 +1,41 @@
-# Others
+# 其他工具
 
-Other practical utility functions.
+其他实用的工具函数。
 
 ## sleep
 
-Delay function.
+延时函数。
 
-### Usage
+### 用法
 
 ```typescript
 import { sleep } from '@pear/utils'
 
 async function example() {
-  console.log('Start')
+  console.log('开始')
   await sleep(1000)
-  console.log('After 1 second')
+  console.log('1秒后')
 }
 ```
 
 ## random
 
-Random number generator.
+随机数生成。
 
-### Usage
+### 用法
 
 ```typescript
 import { random } from '@pear/utils'
 
-random(1, 10) // Generate random number between 1-10
-random(0, 100) // Generate random number between 0-100
+random(1, 10) // 生成 1-10 之间的随机数
+random(0, 100) // 生成 0-100 之间的随机数
 ```
 
 ## uuid
 
-Generate unique ID.
+生成唯一ID。
 
-### Usage
+### 用法
 
 ```typescript
 import { uuid } from '@pear/utils'
@@ -45,9 +45,9 @@ uuid() // '550e8400-e29b-41d4-a716-446655440000'
 
 ## formatBytes
 
-Format byte size.
+格式化字节大小。
 
-### Usage
+### 用法
 
 ```typescript
 import { formatBytes } from '@pear/utils'

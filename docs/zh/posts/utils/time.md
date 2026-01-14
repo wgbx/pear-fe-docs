@@ -1,12 +1,12 @@
-# Time
+# 时间处理
 
-Time manipulation utility functions.
+时间处理相关的工具函数。
 
 ## formatDate
 
-Format date.
+日期格式化。
 
-### Usage
+### 用法
 
 ```typescript
 import { formatDate } from '@pear/utils'
@@ -18,22 +18,22 @@ formatDate(date, 'YYYY/MM/DD') // '2024/01/01'
 
 ## getTimeAgo
 
-Get relative time.
+相对时间。
 
-### Usage
+### 用法
 
 ```typescript
 import { getTimeAgo } from '@pear/utils'
 
-const date = new Date(Date.now() - 3600000) // 1 hour ago
-getTimeAgo(date) // '1 hour ago'
+const date = new Date(Date.now() - 3600000) // 1小时前
+getTimeAgo(date) // '1小时前'
 ```
 
 ## isSameDay
 
-Check if two dates are the same day.
+判断是否同一天。
 
-### Usage
+### 用法
 
 ```typescript
 import { isSameDay } from '@pear/utils'
@@ -45,9 +45,9 @@ isSameDay(date1, date2) // true
 
 ## getDaysBetween
 
-Calculate days between two dates.
+计算日期差。
 
-### Usage
+### 用法
 
 ```typescript
 import { getDaysBetween } from '@pear/utils'

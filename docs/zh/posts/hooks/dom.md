@@ -1,12 +1,12 @@
-# DOM Operations
+# DOM 操作
 
-Hooks related to DOM operations for handling click outside, window size, scroll, and other scenarios.
+DOM 操作相关的 Hooks，用于处理点击外部、窗口尺寸、滚动等场景。
 
 ## useClickOutside
 
-Click outside detection Hook.
+点击外部区域 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useClickOutside } from '@pear/hooks'
@@ -22,8 +22,8 @@ function Dropdown() {
 
   return (
     <div ref={ref}>
-      <button onClick={() => setIsOpen(!isOpen)}>Open Menu</button>
-      {isOpen && <div>Menu Content</div>}
+      <button onClick={() => setIsOpen(!isOpen)}>打开菜单</button>
+      {isOpen && <div>菜单内容</div>}
     </div>
   )
 }
@@ -31,9 +31,9 @@ function Dropdown() {
 
 ## useWindowSize
 
-Window size listener Hook.
+窗口尺寸监听 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useWindowSize } from '@pear/hooks'
@@ -43,8 +43,8 @@ function ResponsiveComponent() {
 
   return (
     <div>
-      <p>Window width: {width}px</p>
-      <p>Window height: {height}px</p>
+      <p>窗口宽度: {width}px</p>
+      <p>窗口高度: {height}px</p>
     </div>
   )
 }
@@ -52,9 +52,9 @@ function ResponsiveComponent() {
 
 ## useScroll
 
-Scroll listener Hook.
+滚动监听 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useScroll } from '@pear/hooks'
@@ -64,8 +64,8 @@ function ScrollComponent() {
 
   return (
     <div>
-      <p>Horizontal scroll: {x}px</p>
-      <p>Vertical scroll: {y}px</p>
+      <p>横向滚动: {x}px</p>
+      <p>纵向滚动: {y}px</p>
     </div>
   )
 }

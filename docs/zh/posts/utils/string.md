@@ -1,12 +1,12 @@
-# String
+# 字符串处理
 
-String manipulation utility functions.
+字符串处理相关的工具函数。
 
 ## camelCase
 
-Convert to camelCase.
+转换为驼峰命名。
 
-### Usage
+### 用法
 
 ```typescript
 import { camelCase } from '@pear/utils'
@@ -17,9 +17,9 @@ camelCase('hello_world') // 'helloWorld'
 
 ## kebabCase
 
-Convert to kebab-case.
+转换为短横线命名。
 
-### Usage
+### 用法
 
 ```typescript
 import { kebabCase } from '@pear/utils'
@@ -30,9 +30,9 @@ kebabCase('hello_world') // 'hello-world'
 
 ## capitalize
 
-Capitalize first letter.
+首字母大写。
 
-### Usage
+### 用法
 
 ```typescript
 import { capitalize } from '@pear/utils'
@@ -43,9 +43,9 @@ capitalize('hello world') // 'Hello world'
 
 ## trim
 
-Trim whitespace.
+去除首尾空格。
 
-### Usage
+### 用法
 
 ```typescript
 import { trim } from '@pear/utils'

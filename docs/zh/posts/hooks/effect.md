@@ -1,12 +1,12 @@
-# Side Effects
+# 副作用处理
 
-Hooks related to side effects for handling debounce, throttle, timers, and other scenarios.
+副作用处理相关的 Hooks，用于处理防抖、节流、定时器等场景。
 
 ## useDebounce
 
-Debounce handling Hook.
+防抖处理 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useDebounce } from '@pear/hooks'
@@ -16,7 +16,7 @@ function SearchInput() {
   const debouncedValue = useDebounce(input, 500)
 
   useEffect(() => {
-    console.log('Search:', debouncedValue)
+    console.log('搜索:', debouncedValue)
   }, [debouncedValue])
 
   return <input value={input} onChange={(e) => setInput(e.target.value)} />
@@ -25,9 +25,9 @@ function SearchInput() {
 
 ## useThrottle
 
-Throttle handling Hook.
+节流处理 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useThrottle } from '@pear/hooks'
@@ -42,15 +42,15 @@ function ScrollComponent() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  return <div>Scroll position: {throttledScrollY}</div>
+  return <div>滚动位置: {throttledScrollY}</div>
 }
 ```
 
 ## useInterval
 
-Timer Hook.
+定时器 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useInterval } from '@pear/hooks'
@@ -62,15 +62,15 @@ function Timer() {
     setCount(count + 1)
   }, 1000)
 
-  return <div>Count: {count}</div>
+  return <div>计数: {count}</div>
 }
 ```
 
 ## useTimeout
 
-Delayed execution Hook.
+延时执行 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useTimeout } from '@pear/hooks'
@@ -82,7 +82,7 @@ function DelayedMessage() {
     setShow(true)
   }, 2000)
 
-  return show ? <div>Delayed message</div> : null
+  return show ? <div>延迟显示的消息</div> : null
 }
 ```
 

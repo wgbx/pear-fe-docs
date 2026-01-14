@@ -1,71 +1,71 @@
 # Utils
 
-工具函数集合，提供常用的 JavaScript 工具函数，涵盖字符串、对象、数组、时间等常见操作。
+A collection of utility functions providing commonly used JavaScript utilities covering string, object, array, time, and other common operations.
 
-## 简介
+## Introduction
 
-Utils 模块包含了一系列实用的工具函数，帮助简化日常开发中的常见操作，提高开发效率。
+The Utils module includes a series of practical utility functions to simplify common operations in daily development and improve development efficiency.
 
-## 快速开始
+## Quick Start
 
 ```typescript
 import { formatDate, deepClone, debounce } from '@pear/utils'
 ```
 
-## 功能分类
+## Categories
 
-### 字符串处理
+### String
 
-- `camelCase` - 转换为驼峰命名
-- `kebabCase` - 转换为短横线命名
-- `capitalize` - 首字母大写
-- `trim` - 去除首尾空格
+- `camelCase` - Convert to camelCase
+- `kebabCase` - Convert to kebab-case
+- `capitalize` - Capitalize first letter
+- `trim` - Trim whitespace
 
-### 对象操作
+### Object
 
-- `deepClone` - 深拷贝
-- `pick` - 选择对象属性
-- `omit` - 排除对象属性
-- `merge` - 对象合并
+- `deepClone` - Deep clone
+- `pick` - Pick object properties
+- `omit` - Omit object properties
+- `merge` - Merge objects
 
-### 数组操作
+### Array
 
-- `unique` - 数组去重
-- `chunk` - 数组分块
-- `flatten` - 数组扁平化
-- `groupBy` - 数组分组
+- `unique` - Remove duplicates
+- `chunk` - Chunk array
+- `flatten` - Flatten array
+- `groupBy` - Group array
 
-### 时间处理
+### Time
 
-- `formatDate` - 日期格式化
-- `getTimeAgo` - 相对时间
-- `isSameDay` - 判断是否同一天
-- `getDaysBetween` - 计算日期差
+- `formatDate` - Format date
+- `getTimeAgo` - Relative time
+- `isSameDay` - Check if same day
+- `getDaysBetween` - Calculate days between dates
 
-### 函数工具
+### Function
 
-- `debounce` - 防抖
-- `throttle` - 节流
-- `memoize` - 函数缓存
-- `pipe` - 函数管道
+- `debounce` - Debounce
+- `throttle` - Throttle
+- `memoize` - Function memoization
+- `pipe` - Function pipeline
 
-### 类型判断
+### Type
 
-- `isString` - 判断字符串
-- `isNumber` - 判断数字
-- `isObject` - 判断对象
-- `isArray` - 判断数组
+- `isString` - Check if string
+- `isNumber` - Check if number
+- `isObject` - Check if object
+- `isArray` - Check if array
 
-### 其他工具
+### Others
 
-- `sleep` - 延时函数
-- `random` - 随机数生成
-- `uuid` - 生成唯一ID
-- `formatBytes` - 格式化字节大小
+- `sleep` - Delay function
+- `random` - Random number generator
+- `uuid` - Generate unique ID
+- `formatBytes` - Format byte size
 
-## 示例
+## Examples
 
-### 深拷贝
+### Deep Clone
 
 ```typescript
 import { deepClone } from '@pear/utils'
@@ -74,19 +74,19 @@ const obj = { a: 1, b: { c: 2 } }
 const cloned = deepClone(obj)
 ```
 
-### 防抖
+### Debounce
 
 ```typescript
 import { debounce } from '@pear/utils'
 
 const handleSearch = debounce((keyword) => {
-  console.log('搜索:', keyword)
+  console.log('Search:', keyword)
 }, 500)
 
 handleSearch('hello')
 ```
 
-### 日期格式化
+### Date Formatting
 
 ```typescript
 import { formatDate } from '@pear/utils'
@@ -95,7 +95,7 @@ const date = new Date()
 formatDate(date, 'YYYY-MM-DD HH:mm:ss') // '2024-01-01 12:00:00'
 ```
 
-### 数组去重
+### Remove Duplicates
 
 ```typescript
 import { unique } from '@pear/utils'
@@ -104,7 +104,7 @@ const arr = [1, 2, 2, 3, 3, 3]
 unique(arr) // [1, 2, 3]
 ```
 
-## 更多
+## More
 
-更多工具函数的使用方法和 API 文档，请查看各个函数的详细文档。
+For more utility functions usage and API documentation, please check the detailed documentation for each function.
 

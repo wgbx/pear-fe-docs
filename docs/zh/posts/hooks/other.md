@@ -1,12 +1,12 @@
-# Other Hooks
+# 其他 Hooks
 
-Other practical Hooks.
+其他实用的 Hooks。
 
 ## usePrevious
 
-Get previous value Hook.
+获取上一次的值 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { usePrevious } from '@pear/hooks'
@@ -17,9 +17,9 @@ function Counter() {
 
   return (
     <div>
-      <p>Current value: {count}</p>
-      <p>Previous value: {prevCount}</p>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+      <p>当前值: {count}</p>
+      <p>上一次值: {prevCount}</p>
+      <button onClick={() => setCount(count + 1)}>增加</button>
     </div>
   )
 }
@@ -27,9 +27,9 @@ function Counter() {
 
 ## useUpdateEffect
 
-Execute side effects on update Hook.
+更新时执行副作用 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useUpdateEffect } from '@pear/hooks'
@@ -38,14 +38,14 @@ function Component() {
   const [count, setCount] = useState(0)
 
   useEffect(() => {
-    console.log('First render')
+    console.log('首次渲染')
   }, [])
 
   useUpdateEffect(() => {
-    console.log('Update:', count)
+    console.log('更新时执行:', count)
   }, [count])
 
-  return <button onClick={() => setCount(count + 1)}>Count: {count}</button>
+  return <button onClick={() => setCount(count + 1)}>计数: {count}</button>
 }
 ```
 

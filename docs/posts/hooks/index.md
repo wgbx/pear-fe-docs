@@ -1,45 +1,45 @@
 # Hooks
 
-React Hooks 工具函数集合，提供常用的自定义 Hooks，帮助简化组件开发。
+A collection of React Hooks utilities providing commonly used custom Hooks to simplify component development.
 
-## 简介
+## Introduction
 
-Hooks 模块包含了一系列实用的 React Hooks，涵盖了状态管理、副作用处理、DOM 操作等常见场景。
+The Hooks module includes a series of practical React Hooks covering state management, side effects, DOM operations, and other common scenarios.
 
-## 快速开始
+## Quick Start
 
 ```typescript
 import { useLocalStorage, useDebounce } from '@pear/hooks'
 ```
 
-## 功能列表
+## Features
 
-### 状态管理
+### State Management
 
-- `useLocalStorage` - 本地存储状态管理
-- `useSessionStorage` - 会话存储状态管理
-- `useToggle` - 布尔值切换
-- `useCounter` - 计数器
+- `useLocalStorage` - Local storage state management
+- `useSessionStorage` - Session storage state management
+- `useToggle` - Boolean toggle
+- `useCounter` - Counter
 
-### 副作用处理
+### Side Effects
 
-- `useDebounce` - 防抖处理
-- `useThrottle` - 节流处理
-- `useInterval` - 定时器
-- `useTimeout` - 延时执行
+- `useDebounce` - Debounce handling
+- `useThrottle` - Throttle handling
+- `useInterval` - Timer
+- `useTimeout` - Delayed execution
 
-### DOM 操作
+### DOM Operations
 
-- `useClickOutside` - 点击外部区域
-- `useWindowSize` - 窗口尺寸监听
-- `useScroll` - 滚动监听
+- `useClickOutside` - Click outside detection
+- `useWindowSize` - Window size listener
+- `useScroll` - Scroll listener
 
-### 其他
+### Others
 
-- `usePrevious` - 获取上一次的值
-- `useUpdateEffect` - 更新时执行副作用
+- `usePrevious` - Get previous value
+- `useUpdateEffect` - Execute side effects on update
 
-## 示例
+## Examples
 
 ### useLocalStorage
 
@@ -67,14 +67,15 @@ function SearchInput() {
   const debouncedValue = useDebounce(input, 500)
 
   useEffect(() => {
-    // 搜索逻辑
-    console.log('搜索:', debouncedValue)
+    // Search logic
+    console.log('Search:', debouncedValue)
   }, [debouncedValue])
 
   return <input value={input} onChange={(e) => setInput(e.target.value)} />
 }
 ```
 
-## 更多
+## More
 
-更多 Hooks 的使用方法和 API 文档，请查看各个 Hook 的详细文档。
+For more Hooks usage and API documentation, please check the detailed documentation for each Hook.
+

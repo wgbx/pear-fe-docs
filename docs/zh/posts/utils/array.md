@@ -1,12 +1,12 @@
-# Array
+# 数组操作
 
-Array manipulation utility functions.
+数组操作相关的工具函数。
 
 ## unique
 
-Remove duplicates from array.
+数组去重。
 
-### Usage
+### 用法
 
 ```typescript
 import { unique } from '@pear/utils'
@@ -17,9 +17,9 @@ unique(['a', 'b', 'a', 'c']) // ['a', 'b', 'c']
 
 ## chunk
 
-Chunk array into smaller arrays.
+数组分块。
 
-### Usage
+### 用法
 
 ```typescript
 import { chunk } from '@pear/utils'
@@ -29,9 +29,9 @@ chunk([1, 2, 3, 4, 5], 2) // [[1, 2], [3, 4], [5]]
 
 ## flatten
 
-Flatten nested array.
+数组扁平化。
 
-### Usage
+### 用法
 
 ```typescript
 import { flatten } from '@pear/utils'
@@ -41,9 +41,9 @@ flatten([1, [2, 3], [4, [5, 6]]]) // [1, 2, 3, 4, 5, 6]
 
 ## groupBy
 
-Group array by key.
+数组分组。
 
-### Usage
+### 用法
 
 ```typescript
 import { groupBy } from '@pear/utils'

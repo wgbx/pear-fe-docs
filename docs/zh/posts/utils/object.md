@@ -1,12 +1,12 @@
-# Object
+# 对象操作
 
-Object manipulation utility functions.
+对象操作相关的工具函数。
 
 ## deepClone
 
-Deep clone object.
+深拷贝对象。
 
-### Usage
+### 用法
 
 ```typescript
 import { deepClone } from '@pear/utils'
@@ -17,9 +17,9 @@ const cloned = deepClone(obj)
 
 ## pick
 
-Pick object properties.
+选择对象属性。
 
-### Usage
+### 用法
 
 ```typescript
 import { pick } from '@pear/utils'
@@ -30,9 +30,9 @@ pick(obj, ['a', 'c']) // { a: 1, c: 3 }
 
 ## omit
 
-Omit object properties.
+排除对象属性。
 
-### Usage
+### 用法
 
 ```typescript
 import { omit } from '@pear/utils'
@@ -43,9 +43,9 @@ omit(obj, ['b']) // { a: 1, c: 3 }
 
 ## merge
 
-Merge objects.
+对象合并。
 
-### Usage
+### 用法
 
 ```typescript
 import { merge } from '@pear/utils'

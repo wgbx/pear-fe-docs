@@ -1,12 +1,12 @@
-# State Management
+# 状态管理
 
-Hooks related to state management for managing various states in components.
+状态管理相关的 Hooks，用于管理组件中的各种状态。
 
 ## useLocalStorage
 
-Local storage state management Hook.
+本地存储状态管理 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useLocalStorage } from '@pear/hooks'
@@ -24,9 +24,9 @@ function App() {
 
 ## useSessionStorage
 
-Session storage state management Hook.
+会话存储状态管理 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useSessionStorage } from '@pear/hooks'
@@ -40,9 +40,9 @@ function App() {
 
 ## useToggle
 
-Boolean toggle Hook.
+布尔值切换 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useToggle } from '@pear/hooks'
@@ -52,7 +52,7 @@ function App() {
 
   return (
     <button onClick={toggle}>
-      {value ? 'On' : 'Off'}
+      {value ? '开启' : '关闭'}
     </button>
   )
 }
@@ -60,9 +60,9 @@ function App() {
 
 ## useCounter
 
-Counter Hook.
+计数器 Hook。
 
-### Usage
+### 用法
 
 ```typescript
 import { useCounter } from '@pear/hooks'
@@ -75,7 +75,7 @@ function App() {
       <button onClick={dec}>-</button>
       <span>{count}</span>
       <button onClick={inc}>+</button>
-      <button onClick={reset}>Reset</button>
+      <button onClick={reset}>重置</button>
     </div>
   )
 }

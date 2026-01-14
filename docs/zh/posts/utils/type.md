@@ -1,12 +1,12 @@
-# Type
+# 类型判断
 
-Type checking utility functions.
+类型判断相关的工具函数。
 
 ## isString
 
-Check if value is a string.
+判断是否为字符串。
 
-### Usage
+### 用法
 
 ```typescript
 import { isString } from '@pear/utils'
@@ -17,9 +17,9 @@ isString(123) // false
 
 ## isNumber
 
-Check if value is a number.
+判断是否为数字。
 
-### Usage
+### 用法
 
 ```typescript
 import { isNumber } from '@pear/utils'
@@ -31,9 +31,9 @@ isNumber(NaN) // false
 
 ## isObject
 
-Check if value is an object.
+判断是否为对象。
 
-### Usage
+### 用法
 
 ```typescript
 import { isObject } from '@pear/utils'
@@ -45,9 +45,9 @@ isObject(null) // false
 
 ## isArray
 
-Check if value is an array.
+判断是否为数组。
 
-### Usage
+### 用法
 
 ```typescript
 import { isArray } from '@pear/utils'
