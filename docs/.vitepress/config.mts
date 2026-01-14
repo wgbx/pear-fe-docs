@@ -1,16 +1,16 @@
 import { defineConfig } from 'vitepress'
-import { enSidebar, zhSidebar } from './sidebar'
+import { enSidebar, zhSidebar } from './sidebar/index'
 
 export default defineConfig({
-  head: [['link', { rel: 'icon', href: '/docs/favicon.svg', type: 'image/svg+xml' }]],
+  head: [['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }]],
   title: 'Pear/docs',
   description: 'Modern JavaScript utility library',
   locales: {
     root: {
       label: 'English',
       lang: 'en',
-      title: 'Pear/docs',
-      description: 'Modern JavaScript utility library',
+      title: 'Pear Docs',
+      description: 'Frontend Development Documentation',
       themeConfig: {
         logo: '/favicon.svg',
         lastUpdated: {
@@ -21,10 +21,12 @@ export default defineConfig({
           next: 'Next'
         },
         outline: {
-          label: 'On this page'
+          label: 'On this page',
+          level: [2, 3]
         },
         nav: [
           { text: 'Home', link: '/' },
+          { text: 'Standard', link: '/posts/standard/index.md' },
           { text: 'Hooks', link: '/posts/hooks/index.md' },
           { text: 'Utils', link: '/posts/utils/index.md' }
         ],
@@ -52,15 +54,15 @@ export default defineConfig({
         socialLinks: [{ icon: 'github', link: 'https://github.com/bosinc/fe-docs' }],
         footer: {
           message: 'Released under the MIT License.',
-          copyright: 'Copyright © 2019-present pear'
+          copyright: 'Copyright © 2019-present Pear'
         }
       }
     },
     zh: {
       label: '中文',
       lang: 'zh-CN',
-      title: 'Pear/docs',
-      description: '现代化前端工具库',
+      title: 'Pear Docs',
+      description: '前端开发文档',
       themeConfig: {
         logo: '/favicon.svg',
         lastUpdated: {
@@ -71,10 +73,12 @@ export default defineConfig({
           next: '下一页'
         },
         outline: {
-          label: '大纲'
+          label: '大纲',
+          level: [2, 3]
         },
         nav: [
           { text: '首页', link: '/zh/' },
+          { text: '规范', link: '/zh/posts/standard/index.md' },
           { text: 'Hooks', link: '/zh/posts/hooks/index.md' },
           { text: 'Utils', link: '/zh/posts/utils/index.md' }
         ],
@@ -102,7 +106,7 @@ export default defineConfig({
         socialLinks: [{ icon: 'github', link: 'https://github.com/bosinc/fe-docs' }],
         footer: {
           message: 'Released under the MIT License.',
-          copyright: 'Copyright © 2019-present pear'
+          copyright: 'Copyright © 2019-present Pear'
         }
       }
     }

@@ -2,8 +2,8 @@
 layout: home
 
 hero:
-  name: "Pear/docs"
-  text: "Modern Frontend Utility Library"
+  name: "Pear Docs"
+  text: "Frontend Development Documentation"
   actions:
     - theme: brand
       text: Get Started
@@ -20,7 +20,7 @@ features:
     title: Utility Functions
     details: Practical JavaScript utility functions including string, object, array, time, and other common operations
   - icon: 📚
-    title: Complete Documentation
-    details: Detailed API documentation and usage examples to help developers get started quickly and improve development efficiency
+    title: Development Standards
+    details: Project development standards and best practices, including React coding standards, Git workflows, GitHub collaboration standards, etc.
 ---
 
