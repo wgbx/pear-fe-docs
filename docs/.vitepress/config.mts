@@ -27,6 +27,7 @@ export default defineConfig({
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Standard', link: '/posts/standard/index.md' },
+          { text: 'Incidents', link: '/posts/incidents/index.md' },
           { text: 'Hooks', link: '/posts/hooks/index.md' },
           { text: 'Utils', link: '/posts/utils/index.md' }
         ],
@@ -78,6 +79,7 @@ export default defineConfig({
         },
         nav: [
           { text: '首页', link: '/zh/' },
+          { text: '事故', link: '/zh/posts/incidents/index.md' },
           { text: '规范', link: '/zh/posts/standard/index.md' },
           { text: 'Hooks', link: '/zh/posts/hooks/index.md' },
           { text: 'Utils', link: '/zh/posts/utils/index.md' }

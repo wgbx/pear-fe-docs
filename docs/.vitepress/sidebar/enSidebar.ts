@@ -33,6 +33,15 @@ export const enSidebar = {
       ]
     }
   ],
+  '/posts/incidents/': [
+    {
+      text: 'Incident Postmortem',
+      items: [
+        { text: 'Introduction', link: '/posts/incidents/index.md' },
+        { text: 'PayPal SDK Crash', link: '/posts/incidents/paypal-sdk-crash-2026-01-15.md' }
+      ]
+    }
+  ],
   '/posts/hooks/': [
     {
       text: 'Hooks',

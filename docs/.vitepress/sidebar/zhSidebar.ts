@@ -31,6 +31,15 @@ export const zhSidebar = {
       ]
     }
   ],
+  '/zh/posts/incidents/': [
+    {
+      text: '事故',
+      items: [
+        { text: '介绍', link: '/zh/posts/incidents/index.md' },
+        { text: 'PayPal SDK 崩溃事故', link: '/zh/posts/incidents/paypal-sdk-crash-2026-01-15.md' }
+      ]
+    }
+  ],
   '/zh/posts/hooks/': [
     {
       text: 'Hooks',

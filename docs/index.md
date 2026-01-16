@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /posts/hooks/index.md
+      link: /posts/standard/.md
     - theme: alt
       text: View on Github
       link: https://github.com/bosinc/fe-docs
