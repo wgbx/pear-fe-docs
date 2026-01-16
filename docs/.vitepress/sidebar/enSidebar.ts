@@ -53,5 +53,20 @@ export const enSidebar = {
       text: 'Utils',
       items: [{ text: 'Introduction', link: '/posts/utils/index.md' }]
     }
+  ],
+  '/posts/components/': [
+    {
+      text: 'Components',
+      items: [
+        { text: 'Introduction', link: '/posts/components/index.md' },
+        {
+          text: 'Business Components',
+          collapsed: false,
+          items: [
+            { text: 'BookmarkBanner', link: '/posts/components/business/bookmark-banner.md' }
+          ]
+        }
+      ]
+    }
   ]
 }

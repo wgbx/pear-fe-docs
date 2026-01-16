@@ -51,5 +51,20 @@ export const zhSidebar = {
       text: 'Utils',
       items: [{ text: '介绍', link: '/zh/posts/utils/index.md' }]
     }
+  ],
+  '/zh/posts/components/': [
+    {
+      text: '组件',
+      items: [
+        { text: '介绍', link: '/zh/posts/components/index.md' },
+        {
+          text: '业务组件',
+          collapsed: false,
+          items: [
+            { text: 'BookmarkBanner', link: '/zh/posts/components/business/bookmark-banner.md' }
+          ]
+        }
+      ]
+    }
   ]
 }
