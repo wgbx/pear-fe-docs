@@ -67,19 +67,20 @@ function Component() {
 }
 ```
 
-### Using Rich Text Internationalization
+### Using Rich Text
 
 When you need to include clickable links or other custom components in the description text, you can use the `t.rich()` function:
 
 ```tsx
+import { BookmarkBanner, descriptionSx } from '@webCommon/components-ui/molecules/TipBanner';
+
 function Component() {
 
   const LinkTextComponent = useMemoizedFn((chunks) => (
     <MuiTypography
       sx={{
-        fontSize: '0.75rem',
+        ...descriptionSx,
         fontWeight: 700,
-        color: 'shades.900',
         textDecoration: 'underline',
       }}
     >
@@ -89,13 +90,9 @@ function Component() {
 
   return (
     <BookmarkBanner
-      description={
-        <>
-          {t.rich('Message', {
-            Link: LinkTextComponent,
-          })}
-        </>
-      }
+      description={t.rich('Message', {
+        Link: LinkTextComponent,
+      })}
     />
   );
 }

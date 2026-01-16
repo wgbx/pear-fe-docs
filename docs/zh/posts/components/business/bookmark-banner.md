@@ -72,14 +72,15 @@ function Component() {
 当需要在描述文本中包含可点击的链接或其他自定义组件时，可以使用 `t.rich()` 函数：
 
 ```tsx
+import { BookmarkBanner, descriptionSx } from '@webCommon/components-ui/molecules/TipBanner';
+
 function Component() {
 
   const LinkTextComponent = useMemoizedFn((chunks) => (
     <MuiTypography
       sx={{
-        fontSize: '0.75rem',
+        ...descriptionSx
         fontWeight: 700,
-        color: 'shades.900',
         textDecoration: 'underline',
       }}
     >
@@ -89,12 +90,9 @@ function Component() {
 
   return (
     <BookmarkBanner
-      description={
-        <>
-          {t.rich('Message', {
-            Link: LinkTextComponent,
-          })}
-        </>
+      description={t.rich('Message', {
+        Link: LinkTextComponent,
+       })
       }
     />
   );
